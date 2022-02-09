@@ -38,4 +38,3 @@ prices.forEach(function (price,index){
 
 
 
-

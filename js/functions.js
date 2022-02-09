@@ -51,7 +51,7 @@
 
 // // Don't modify the following line, it generates a random number between 1 and 3
 // // and stores it in a variable named random
-var random = Math.floor((Math.random() * 3) + 1);
+// var random = Math.floor((Math.random() * 3) + 1);
 //
 // /**
 //  * TODO:
@@ -72,11 +72,11 @@ var random = Math.floor((Math.random() * 3) + 1);
 //  */
 //
 //
-function isTwo(num) {
-    return num === 2;
-}
-//
-console.log(isTwo(random));
+// function isTwo(num) {
+//     return num === 2;
+// }
+// //
+// console.log(isTwo(random));
 //
 //
 //
@@ -94,9 +94,9 @@ console.log(isTwo(random));
 // //
 
 // (number) tip percentage, (number) billAmountDollars
-function calculateTip(tipPercentage, billAmountDollars) {
-    return tipPercentage * billAmountDollars;
-}
+// function calculateTip(tipPercentage, billAmountDollars) {
+//     return tipPercentage * billAmountDollars;
+// }
 
 //
 //
@@ -108,10 +108,10 @@ function calculateTip(tipPercentage, billAmountDollars) {
 // //  */
 // //
 //
-var billTotal = prompt("What is the total bill?");
-var tipPercentage = prompt("How much do you want to tip");
-var tipTotal = calculateTip(tipPercentage, billTotal);
-alert("You will pay " + tipTotal + " for a tip.");
+// var billTotall = prompt("What is the total bill?");
+// var tipPercentage = prompt("How much do you want to tip");
+// var tipTotal = calculateTip(tipPercentage, billTotal);
+// alert("You will pay " + tipTotal + " for a tip.");
 
 
 // /**
@@ -132,8 +132,22 @@ alert("You will pay " + tipTotal + " for a tip.");
 //  */
 // what is the input? price (number) and discount (number)
 
-function applyDiscount(price, discount) {
-    var dollarsOffThePrice = price * discount;
-    return price - dollarsOffThePrice;
+// function applyDiscount(price, discount) {
+//     var dollarsOffThePrice = price * discount;
+//     return price - dollarsOffThePrice;
+// }
+
+
+function getReminder(){
+    console.log("Water The Plants");
 }
 
+function greetInSpanish(){
+    console.log("Good Evening");
+}
+
+function sayThanks(name){
+    return ("Thank you " + name + " for your purchase, we appreciate your business.");
+}
+
+console.log(sayThanks("John"));
