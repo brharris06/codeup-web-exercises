@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 //
 // //Write a function that takes in an input and returns the string "I have no idea what you just said";
 //
@@ -95,6 +95,64 @@ function removeBs(arr) {
 
 console.log(removeBs([‘abc’, ‘ab’, ‘cat’, ‘Bay’]));
 
+
+//February 14th Warm-Up
+// Write a function, createUserMsg, that takes in a user object like the following...
+// {
+//     username: ‘jbomb’,
+//     email: ‘john@email.com’,
+//     isAdmin: true
+// }
+// ...and returns a string output that displays in the console like this...
+// ‘User jbomb is an admin and can be reached at john@email.com’
+// If jbomb were not an admin, the message should display...
+// ‘User jbomb is not an admin and can be reached at john@email.com’
+
+
+var userInfo = {
+    username: "jbomb",
+    email: "john@email.com",
+    isAdmin: true
+};
+
+function createUserMsg(userInfo) {
+    if (userInfo.isAdmin) {
+        return "User " + userInfo.username + is
+        an
+        admin
+        and
+        can
+        be
+        reached
+        at
+        " + userInfo.email;
+    } else {
+        return "User " + userInfo.username + is
+        not
+        an
+        admin
+        and
+        can
+        be
+        reached
+        at
+        " + userInfo.email;
+    }
+    return "User " + userInfo.username + " is " + ((userInfo.isAdmin) ? "" : "not ") + "an admdin and can be reached at "
+        + userInfo.email;
+}
+    console.log(createUserMsg(userInfo));
+
+//     var person = {};
+// {
+//     person.firstName = "Brandon";
+//     person.lastName = "Harris";
+//     person.sayHello = function (input) {
+//         return "Hello from " + input;
+//     }
+// }
+//
+// console.log(person.sayHello(person.firstName + " " + person.lastName));
 
 
 
