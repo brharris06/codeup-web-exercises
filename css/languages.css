@@ -1,0 +1,20 @@
+body {
+    background: orange;
+}
+
+li {
+    color: darkslategrey;
+}
+
+.declarative {
+    color: rebeccapurple;
+}
+
+.programming {
+    color: darkgreen;
+}
+
+#query {
+    color: mediumorchid;
+}
+
