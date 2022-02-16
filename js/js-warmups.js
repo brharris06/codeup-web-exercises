@@ -81,19 +81,19 @@
 // removeBs([‘abc’, ‘ab’, ‘cat’, ‘Bay’]) // returns [‘ac’, ‘a’, ‘cat’, ‘ay’]
 
 
-function removeBsFromString(str) {
-    return str.replaceAll("b", "").replaceAll("B", "");
-}
-
-function removeBs(arr) {
-    var output = [];
-    arr.forEach(function (str) {
-        output.push(str);
-    });
-    return output;
-}
-
-console.log(removeBs([‘abc’, ‘ab’, ‘cat’, ‘Bay’]));
+// function removeBsFromString(str) {
+//     return str.replaceAll("b", "").replaceAll("B", "");
+// }
+//
+// function removeBs(arr) {
+//     var output = [];
+//     arr.forEach(function (str) {
+//         output.push(str);
+//     });
+//     return output;
+// }
+//
+// console.log(removeBs([‘abc’, ‘ab’, ‘cat’, ‘Bay’]));
 
 
 //February 14th Warm-Up
@@ -109,39 +109,39 @@ console.log(removeBs([‘abc’, ‘ab’, ‘cat’, ‘Bay’]));
 // ‘User jbomb is not an admin and can be reached at john@email.com’
 
 
-var userInfo = {
-    username: "jbomb",
-    email: "john@email.com",
-    isAdmin: true
-};
-
-function createUserMsg(userInfo) {
-    if (userInfo.isAdmin) {
-        return "User " + userInfo.username + is
-        an
-        admin
-        and
-        can
-        be
-        reached
-        at
-        " + userInfo.email;
-    } else {
-        return "User " + userInfo.username + is
-        not
-        an
-        admin
-        and
-        can
-        be
-        reached
-        at
-        " + userInfo.email;
-    }
-    return "User " + userInfo.username + " is " + ((userInfo.isAdmin) ? "" : "not ") + "an admdin and can be reached at "
-        + userInfo.email;
-}
-    console.log(createUserMsg(userInfo));
+// var userInfo = {
+//     username: "jbomb",
+//     email: "john@email.com",
+//     isAdmin: true
+// };
+//
+// function createUserMsg(userInfo) {
+//     if (userInfo.isAdmin) {
+//         return "User " + userInfo.username + is
+//         an
+//         admin
+//         and
+//         can
+//         be
+//         reached
+//         at
+//         " + userInfo.email;
+//     } else {
+//         return "User " + userInfo.username + is
+//         not
+//         an
+//         admin
+//         and
+//         can
+//         be
+//         reached
+//         at
+//         " + userInfo.email;
+//     }
+//     return "User " + userInfo.username + " is " + ((userInfo.isAdmin) ? "" : "not ") + "an admdin and can be reached at "
+//         + userInfo.email;
+// }
+//     console.log(createUserMsg(userInfo));
 
 //     var person = {};
 // {
@@ -153,6 +153,22 @@ function createUserMsg(userInfo) {
 // }
 //
 // console.log(person.sayHello(person.firstName + " " + person.lastName));
+
+//You are given the length and width of 4-sided polygon. The polygon can either be a rectangle or a square. If it is a square, return its area. If it is a rectangle, return its perimeter.
+
+
+function areaOrPerimeter(l, w) {
+    if (isNan(parseFloat(l)) || isNan(parseFloat(w))){
+        return false;
+    }
+    if (l == w) {
+        return l * w;
+    } else {
+        return 2*l + 2*w;
+    }
+}
+
+console.log(areaOrPerimeter(6,6));
 
 
 
