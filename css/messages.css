@@ -1,0 +1,51 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+
+.message-info{
+  border: 1px solid darkslategrey;
+    border-radius: 5px;
+    padding-block: 10px;
+    padding-left: 10px;
+    margin: 10px;
+    color: rgb(148, 0, 211);
+    background-color: rgba(161, 154, 199, 0.2);
+}
+
+
+
+.message-success{
+    border: 1px solid darkslategrey;
+    border-radius: 5px;
+    padding-block: 10px;
+    padding-left: 10px;
+    margin: 10px;
+    color: darkgreen;
+    background-color: rgba(144, 238, 144, 0.2);
+}
+
+
+.message-warning{
+    border: 1px solid darkslategrey;
+    border-radius: 5px;
+    padding-block: 10px;
+    padding-left: 10px;
+    margin: 10px;
+    color: #7e793b;
+    background-color: rgba(255, 255, 0, 0.2);
+}
+
+
+.message-error{
+    border: 1px solid darkslategrey;
+    border-radius: 5px;
+    padding-block: 10px;
+    padding-left: 10px;
+    margin: 10px;
+    color: #a52a2a;
+    background-color: rgba(205, 92, 92, 0.2);
+}
