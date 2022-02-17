@@ -157,18 +157,30 @@
 //You are given the length and width of 4-sided polygon. The polygon can either be a rectangle or a square. If it is a square, return its area. If it is a rectangle, return its perimeter.
 
 
-function areaOrPerimeter(l, w) {
-    if (isNan(parseFloat(l)) || isNan(parseFloat(w))){
-        return false;
+// function areaOrPerimeter(l, w) {
+//     if (isNan(parseFloat(l)) || isNan(parseFloat(w))){
+//         return false;
+//     }
+//     if (l == w) {
+//         return l * w;
+//     } else {
+//         return 2*l + 2*w;
+//     }
+// }
+
+// console.log(areaOrPerimeter(6,6));
+
+//Create a function that takes 2 integers in form of a string as an input, and outputs the sum(also as a string):
+
+function sumTheStrings(numString1, numString2){
+    if (typeof numString1 !== "string" || typeof numString2 !== "string" || isNaN(parseFloat(numString2)) || isNaN(parseFloat(numString1))){
+        return  false;
     }
-    if (l == w) {
-        return l * w;
-    } else {
-        return 2*l + 2*w;
-    }
+    return  (parseFloat(numString1) + parseFloat(numString2)).toString();
 }
 
-console.log(areaOrPerimeter(6,6));
+console.log(sumTheStrings("4","5"));
+
 
 
 
