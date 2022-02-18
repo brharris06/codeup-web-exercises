@@ -172,18 +172,60 @@
 
 //Create a function that takes 2 integers in form of a string as an input, and outputs the sum(also as a string):
 
-function sumTheStrings(numString1, numString2){
-    if (typeof numString1 !== "string" || typeof numString2 !== "string" || isNaN(parseFloat(numString2)) || isNaN(parseFloat(numString1))){
-        return  false;
+// function sumTheStrings(numString1, numString2){
+//     if (typeof numString1 !== "string" || typeof numString2 !== "string" || isNaN(parseFloat(numString2)) || isNaN(parseFloat(numString1))){
+//         return  false;
+//     }
+//     return  (parseFloat(numString1) + parseFloat(numString2)).toString();
+// }
+//
+// console.log(sumTheStrings("4","5"));
+
+// In a new HTML file in `codeup-web-exercises`, add a script to solve the following problem...
+// Write a function, getSimpleUser, that takes in a user object and returns a simplified user object.
+//     Assume the following shape of the user object for the function input:
+//     {
+//         firstName: '...',
+//         lastName: '...',
+//         email: '...',
+//         username: '...',
+//         password: '...'
+//     }
+// The shape of the output should be the following:
+// {
+//     firstName: '...',
+//         lastName: '...',
+// }
+// Regardless of the case of the first name and last name input, the output should be in all lower case.
+// var fred = {
+//     firstName: 'Fred',
+//     lastName: 'Smith',
+//     email: 'fred@email.com',
+//     username: 'fred123',
+//     password: 'pass123'
+// }
+// getSimpleUser(fred) // {firstName: 'fred', lastName: 'smith'}
+
+
+
+var userInput =
+    {
+        firstName: "Brandon",
+        lastName: "Harris",
+        email: "brandon.r.harris06@gmail.com",
+        username: "brharris2589",
+        password: "password123",
+    };
+
+
+
+function getSimpleUser(user) {
+    return {
+        firstName: user.firstName.toLowerCase(),
+        lastName: user.lastName.toLowerCase()
     }
-    return  (parseFloat(numString1) + parseFloat(numString2)).toString();
 }
 
-console.log(sumTheStrings("4","5"));
-
-
-
-
-
+console.log(getSimpleUser(userInput));
 
 
