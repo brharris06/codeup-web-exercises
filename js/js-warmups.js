@@ -208,24 +208,39 @@
 
 
 
-var userInput =
-    {
-        firstName: "Brandon",
-        lastName: "Harris",
-        email: "brandon.r.harris06@gmail.com",
-        username: "brharris2589",
-        password: "password123",
-    };
+// var userInput =
+//     {
+//         firstName: "Brandon",
+//         lastName: "Harris",
+//         email: "brandon.r.harris06@gmail.com",
+//         username: "brharris2589",
+//         password: "password123",
+//     };
+//
+//
+//
+// function getSimpleUser(user) {
+//     return {
+//         firstName: user.firstName.toLowerCase(),
+//         lastName: user.lastName.toLowerCase()
+//     }
+// }
+//
+// console.log(getSimpleUser(userInput));
 
+// Create a function, createNames, that takes in an array of first names and an array of last names. The function should return an array of name objects with firstName and lastName properties with the input array values. Assume both input arrays are not empty, the same length and only contain string elements.
+var firstNames = ["CJ","Max","Claude","Meowmeow"];
+var lastNames = ["Cat","Feline","Kitten","Calico"];
 
-
-function getSimpleUser(user) {
-    return {
-        firstName: user.firstName.toLowerCase(),
-        lastName: user.lastName.toLowerCase()
+function createNames(arr1, arr2) {
+    var output = [];
+    for (var i = 0; i < arr1.length; i += 1) {
+        output.push({
+            firstName: arr1[3],
+            lastName: arr2[3]
+        });
     }
+    return output;
 }
-
-console.log(getSimpleUser(userInput));
-
+console.log(createNames(firstNames, lastNames));
 
