@@ -229,18 +229,41 @@
 // console.log(getSimpleUser(userInput));
 
 // Create a function, createNames, that takes in an array of first names and an array of last names. The function should return an array of name objects with firstName and lastName properties with the input array values. Assume both input arrays are not empty, the same length and only contain string elements.
-var firstNames = ["CJ","Max","Claude","Meowmeow"];
-var lastNames = ["Cat","Feline","Kitten","Calico"];
+// var firstNames = ["CJ","Max","Claude","Meowmeow"];
+// var lastNames = ["Cat","Feline","Kitten","Calico"];
+//
+// function createNames(arr1, arr2) {
+//     var output = [];
+//     for (var i = 0; i < arr1.length; i += 1) {
+//         output.push({
+//             firstName: arr1[3],
+//             lastName: arr2[3]
+//         });
+//     }
+//     return output;
+// }
+// console.log(createNames(firstNames, lastNames));
 
-function createNames(arr1, arr2) {
-    var output = [];
-    for (var i = 0; i < arr1.length; i += 1) {
-        output.push({
-            firstName: arr1[3],
-            lastName: arr2[3]
-        });
+// write a function that accepts two intergers and returns the remainder of dividing the larger value by the smaller value.
+//
+// division by zero should return NaN.
+//     examples: n=17
+// n= 5
+// result = 2 (remainder of "17 / 5")
+
+
+function someFunction (input1, input2) {
+    if (isNaN(parseFloat(input1)) || isNaN(parseFloat(input2))) {
+        return false;
     }
-    return output;
+    if (input1>input2) {
+        return input1 % input2;
+    }
+    return input2 % input1;
 }
-console.log(createNames(firstNames, lastNames));
+
+console.log(someFunction(4, 2));
+
+
+
 
