@@ -252,17 +252,17 @@
 // result = 2 (remainder of "17 / 5")
 
 
-function someFunction (input1, input2) {
-    if (isNaN(parseFloat(input1)) || isNaN(parseFloat(input2))) {
-        return false;
-    }
-    if (input1>input2) {
-        return input1 % input2;
-    }
-    return input2 % input1;
-}
-
-console.log(someFunction(4, 2));
+// function someFunction (input1, input2) {
+//     if (isNaN(parseFloat(input1)) || isNaN(parseFloat(input2))) {
+//         return false;
+//     }
+//     if (input1>input2) {
+//         return input1 % input2;
+//     }
+//     return input2 % input1;
+// }
+//
+// console.log(someFunction(4, 2));
 
 
 
