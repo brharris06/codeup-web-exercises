@@ -280,14 +280,28 @@
 //
 // console.log(returnWeight(4,20));
 
-function parcelWeight(object) {
-    return object.weight;
+// function parcelWeight(object) {
+//     return object.weight;
+// }
+//  var parcel = {
+//     parcelNumber: 1,
+//      weight: 20
+//  }
+//
+// console.log(parcelWeight(parcel));
+
+//DOM warmup:
+//Create a heading that says "Good Morning!"
+//Create a button that says "Press if after 12pm"
+//When the button is pressed, "Good Morning" changes to "Good Afternoon"
+
+<h3>Good Morning!</h3>
+<button>Press if after 12pm</button>
+var theButton = document.querySelector("button");
+function doThisWhenTheButtonIsClicked() {
+    document.querySelector('h3').innerText = "Good afternoon";
 }
- var parcel = {
-    parcelNumber: 1,
-     weight: 20
- }
 
-console.log(parcelWeight(parcel));
-
+theButton.addEventListener('click', doThisWhenTheButtonIsClicked);
+}
 
