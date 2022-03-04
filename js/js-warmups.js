@@ -265,5 +265,29 @@
 // console.log(someFunction(4, 2));
 
 
+// create a function that accepts an object with two properties, parcelNumber and weight, and returns the
+// (weight
+// )
+
+// function returnWeight (p,w) {
+//     var parcelNumber = p;
+//     var weight = w;
+//     return {
+//         p * w;
+//     }
+//
+// }
+//
+// console.log(returnWeight(4,20));
+
+function parcelWeight(object) {
+    return object.weight;
+}
+ var parcel = {
+    parcelNumber: 1,
+     weight: 20
+ }
+
+console.log(parcelWeight(parcel));
 
 
