@@ -295,13 +295,81 @@
 //Create a button that says "Press if after 12pm"
 //When the button is pressed, "Good Morning" changes to "Good Afternoon"
 
-<h3>Good Morning!</h3>
-<button>Press if after 12pm</button>
-var theButton = document.querySelector("button");
-function doThisWhenTheButtonIsClicked() {
-    document.querySelector('h3').innerText = "Good afternoon";
-}
+// <h3>Good Morning!</h3>
+// <button>Press if after 12pm</button>
+// var theButton = document.querySelector("button");
+// function doThisWhenTheButtonIsClicked() {
+//     document.querySelector('h3').innerText = "Good afternoon";
+// }
+//
+// theButton.addEventListener('click', doThisWhenTheButtonIsClicked);
+// }
 
-theButton.addEventListener('click', doThisWhenTheButtonIsClicked);
-}
+// ================================= JS WARM UP
+//
+// Consider the following array of users:
+//
+    var users = [
+        {
+            username: 'fsmith',
+            email: 'fsmith@email.com',
+            numberOfLogins: 23
+        },
+        {
+            username: 'ksmith',
+            email: 'ksmith@email.com',
+            numberOfLogins: 100
+        },
+        {
+            username: 'lsmith',
+            email: 'lsmith@email.com',
+            numberOfLogins: 10
+        }
+    ];
 
+// 1. Create a function, returnFirstUser, that takes in an array of user objects and returns the first user object.
+
+// returnFirstUser(users) should return...
+
+// {
+//     username: 'fsmith',
+//         email: 'fsmith@email.com',
+//     numberOfLogins: 23
+// }
+
+// function returnFirstUser (users) {
+//     return users[0];
+// }
+//
+// console.log(returnFirstUser(users));
+
+// 2. Create a function, returnTotalUserLogins, that takes in an array of user objects and returns the total count of logins
+// for all users.
+//
+// returnTotalUserLogins(users) should return... 133
+//
+
+// function returnTotalUserLogins (users) {
+//     var total = 0;
+//     // for (var i = 0; i < users.length; i += 1) {
+//     //     console.log(users[i].numberOfLogins);
+//     //     total += users[i].numberOfLogins;
+//     // }
+//     users.forEach(function (user) {
+//         total += user.numberOfLogins;
+//     });
+//     return total;
+// }
+//
+// console.log(returnTotalUserLogins(users));
+// 3. (optional bonus) create a function, returnMostFrequentUser, that takes in an array of user objects and returns the
+// user object with the highest number of logins.
+//
+//
+// returnMostFrequentUser(users) should return...
+//
+// {
+//     username: 'ksmith',
+//         email: 'ksmith@email.com',
+//     numberOfLogins: 100
+// }
