@@ -373,3 +373,106 @@
 //         email: 'ksmith@email.com',
 //     numberOfLogins: 100
 // }
+
+// ================================= WARM UP
+
+// Create a function, computeOperations, that takes in an array of operation objects and a starting integer value and returns an integer after all the calculations have completed, using the second integer argument as the first operand. Each operation object will have the following shape:
+//
+// {
+//     operation: 'subtract' (or 'multiply' or 'add'),
+//     integer: 7 (or any positive or negative integer)
+// }
+//
+// Example 1...
+
+var operations1 = [
+
+    {
+        operation: 'add',
+        integer: 7
+    },
+    {
+        operation: 'add',
+        integer: 3
+    }
+]
+
+
+
+
+
+
+computeOperations(operations1, 10) // returns 20
+
+
+
+
+// Example 2...
+
+var operations2 = [
+
+    {
+        operation: 'add',
+        integer: 7
+    },
+    {
+        operation: 'add',
+        integer: 3
+    },
+    {
+        operation: 'multiply',
+        integer: 3
+    },
+]
+
+computeOperations(operations2, 10) // returns 60
+
+
+// Example 3...
+
+var operations3 = [
+
+    {
+        operation: 'subtract',
+        integer: 5
+    },
+    {
+        operation: 'multiply',
+        integer: -2
+    },
+    {
+        operation: 'add',
+        integer: 10
+    },
+]
+
+computeOperations(operations3, 10) // returns 0
+
+
+function computeOperations(operators, startingNum) {
+    // create a total variable that we'll change with each iteration of loop
+    var total = startingNum;
+    // loop through each operation and console log each number
+    operators.forEach(function(operator) {
+        if (operator.operation === "add") {
+            // console.log("add the integer");
+            total += operator.integer;
+        } else if (operator.operation === "subtract") {
+            // console.log("subtract the integer");
+            total -= operator.integer;
+        } else if (operator.operation === "multiply") {
+            // console.log("mulitply the integer")
+            total *= operator.integer;
+        }
+
+
+        // console.log(operator.integer);
+        // console.log(operator.operation);
+    });
+    // based on the operation value, we can add/subtract/multiply the current integer to the total variable
+    // return total variable
+    return total;
+
+}
+
+computeOperations(operations3,10);
