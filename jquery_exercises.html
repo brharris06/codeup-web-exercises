@@ -42,6 +42,20 @@
 
 <script>
 
+    $("h1").click(function () {
+        $(this).css("background-color", "green");
+    })
+
+    $("p").dblclick(function() {
+        $(this).css("font-size", "18px");
+    })
+
+    $("li").hover(function() {
+        $(this).css("color", "red");
+    },
+        function () {
+        $(this).css("color", "black");
+        })
     "use strict";
 
     $(document).ready(function() {
@@ -105,11 +119,11 @@
 
         // alert($("h1").html());
 
-        var h1Elements = $("h1");
-
-        function getH1Elements(index, element) {
-            alert(index + $(element).html())
-        }
+        // var h1Elements = $("h1");
+        //
+        // function getH1Elements(index, element) {
+        //     alert(index + $(element).html())
+        // }
 
         h1Elements.each(getH1Elements)
 
@@ -117,9 +131,11 @@
         //     Multiple Selectors
         //
         // Combine your selectors that highlight all the h1, p, and li elements.
-        $("li, p, h1").css("background-color","yellow")
+        // $("li, p, h1").css("background-color","yellow")
     });
 </script>
+
+
 
 </body>
 </html>
