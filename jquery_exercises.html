@@ -10,10 +10,10 @@
 
 
 <div id="container">
-    <h1 id="header">text insiee of the h1</h1>
-    <h1 id="header1">text insiee of the h1</h1>
-    <h1 id="header2">text insiee of the h1</h1>
-    <h1 id="header3">text insiee of the h1</h1>
+    <h1 id="header">text inside of the h1</h1>
+    <h1 id="header1">text inside of the h1</h1>
+    <h1 id="header2">text inside of the h1</h1>
+    <h1 id="header3">text inside of the h1</h1>
 
     <p id="id1" class="text">1 text is here 1</p>
     <p id="id2" class="text">2 text is here 2</p>
@@ -42,20 +42,6 @@
 
 <script>
 
-    $("h1").click(function () {
-        $(this).css("background-color", "green");
-    })
-
-    $("p").dblclick(function() {
-        $(this).css("font-size", "18px");
-    })
-
-    $("li").hover(function() {
-        $(this).css("color", "red");
-    },
-        function () {
-        $(this).css("color", "black");
-        })
     "use strict";
 
     $(document).ready(function() {
@@ -124,18 +110,42 @@
         // function getH1Elements(index, element) {
         //     alert(index + $(element).html())
         // }
-
-        h1Elements.each(getH1Elements)
-
+        //
+        // h1Elements.each(getH1Elements)
+        //
         //
         //     Multiple Selectors
         //
-        // Combine your selectors that highlight all the h1, p, and li elements.
+        // // Combine your selectors that highlight all the h1, p, and li elements.
         // $("li, p, h1").css("background-color","yellow")
+
+        // ======================= MOUSE EVENTS EXERCISE
+
+        $('h1').click(function() {
+            $(this).css('background-color', 'lime');
+        })
+
+        // toggle version
+        $('p').dblclick(function() {
+            if ($(this).css('font-size') === '18px') {
+                $(this).css('font-size', '16px')
+            } else {
+                $(this).css('font-size', '18px');
+            }
+        });
+
+        $('p').dblclick(function() {
+            $(this).css('font-size', '18px');
+        });
+
+        $('li').hover(function() {
+            $(this).css('color', 'red');
+        }, function() {
+            $(this).css('color', 'black');
+        });
+
     });
 </script>
-
-
 
 </body>
 </html>
