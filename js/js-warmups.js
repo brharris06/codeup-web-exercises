@@ -502,5 +502,33 @@
 // }
 //
 // console.log(addTwos(nums1), 2);
+// ================================= WARM UP
+//
+// Write a function, returnStringObject, that takes in a string and returns an object with information about the string. The object should have properties for stringValue and stringArray.
+//
+//     Examples...
 
+returnStringObject('hello') // returns...
+
+{
+    stringValue: 'hello';
+    // stringArray: ['h', 'e', 'l', 'l', 'o']
+}
+
+returnStringObject('codeup') // returns...
+
+{
+    stringValue: 'codeup';
+        stringArray: ['c', 'o', 'd', 'e', 'u', 'p']
+}
+
+function returnStringObject (str) {
+    return {
+        stringValue: str,
+        stringArray: str.split("")
+    }
+}
+
+console.log(returnStringObject('hello'));
+console.log(returnStringObject("codeup"));
 
