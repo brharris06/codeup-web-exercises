@@ -508,27 +508,107 @@
 //
 //     Examples...
 
-returnStringObject('hello') // returns...
+// returnStringObject('hello') // returns...
+//
+// {
+//     stringValue: 'hello';
+//     // stringArray: ['h', 'e', 'l', 'l', 'o']
+// }
+//
+// returnStringObject('codeup') // returns...
+//
+// {
+//     stringValue: 'codeup';
+//         stringArray: ['c', 'o', 'd', 'e', 'u', 'p']
+// }
+//
+// function returnStringObject (str) {
+//     return {
+//         stringValue: str,
+//         stringArray: str.split("")
+//     }
+// }
+//
+// console.log(returnStringObject('hello'));
+// console.log(returnStringObject("codeup"));
 
-{
-    stringValue: 'hello';
-    // stringArray: ['h', 'e', 'l', 'l', 'o']
+// Write a function, countNegatives, and takes in a array of integers and returns the total number of negative numbers. 0 should be considered a non-negative number. If no negative numbers are present, return 0.
+// var nums1 = [-5, 10, 2, 5]; // countNegatives(nums1) returns 1
+// var nums2 = [1, -10, -2, 5]; // countNegatives(nums2) returns 2
+// var nums3 = [3, 10, 2, 5]; // countNegatives(nums3) returns 0
+// var nums4 = [-3, -10]; // countNegatives(nums4) returns 2
+//
+//
+// function countNegatives(nums) {
+//     var negativeCount = 0;
+//     nums.forEach(function(num) {
+//         if (num < 0) {
+//             negativeCount++;
+//         }
+//     });
+//     return negativeCount;
+// }
+//
+// console.log(countNegatives(nums4));
+
+// Create a function, createFirstNamesArray, that takes in an array of user objects and returns an array of first name strings. Assume that each user object has a property called 'firstName'.
+//
+//     Example...
+
+// var users = [
+//     {
+//         firstName: 'Bob',
+//         lastName: 'Smith',
+//         email: 'bob@email.com'
+//     },
+//     {
+//         firstName: 'Sally',
+//         lastName: 'Smith',
+//         email: 'sally@email.com'
+//     },
+//     {
+//         firstName: 'Fred',
+//         lastName: 'Smith',
+//         email: 'fred@email.com'
+//     },
+//     {
+//         firstName: 'Cathy',
+//         lastName: 'Smith',
+//         email: 'cathy@email.com'
+//     },
+//     {
+//         firstName: 'Joe',
+//         lastName: 'Smith',
+//         email: 'joe@email.com'
+//     },
+// ];
+//
+// createFirstNamesArray(users); // returns... ['Bob', 'Sally', 'Fred', 'Cathy', 'Joe']
+//
+// function createFirstNamesArray (arr) {
+//     var firstNames = []
+//     for (var i = 0; i < arr.length; i++) {
+//         firstNames += arr[i].firstName + ","
+//     }
+//     firstNames = firstNames.split(",")
+//     firstNames.pop()
+//     return firstNames;
+// }
+//
+// console.log(createFirstNamesArray(users));
+
+
+/////OR
+
+function returnFirstNames(arr){
+    let names=[];
+    arr.forEach(function (user) {
+        names.push(user.firstName);
+    }); return names;
 }
 
-returnStringObject('codeup') // returns...
+console.log(returnFirstNames(users));
 
-{
-    stringValue: 'codeup';
-        stringArray: ['c', 'o', 'd', 'e', 'u', 'p']
-}
 
-function returnStringObject (str) {
-    return {
-        stringValue: str,
-        stringArray: str.split("")
-    }
-}
 
-console.log(returnStringObject('hello'));
-console.log(returnStringObject("codeup"));
 
