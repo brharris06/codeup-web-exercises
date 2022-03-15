@@ -1,0 +1,36 @@
+.weatherTitle {
+    border: 5px black;
+    background: blue;
+    color: white;
+}
+
+.find {
+    background: blue;
+    color: white;
+}
+
+h6 {
+    position: absolute;
+    color: white;
+    text-align: end;
+    top: 0.7em;
+    right: 0.5em;
+
+}
+
+.searchBar {
+    color: black;
+    position: relative;
+    left: 30px;
+
+}
+
+/*.card-deck {*/
+/*    display: inline-flex;*/
+/*    justify-self: flex-end;*/
+/*    flex-wrap: nowrap;*/
+/*}*/
+
+/*.container-fluid {*/
+/*    justify-content: space-around;*/
+/*}*/
