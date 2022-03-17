@@ -16,19 +16,18 @@
 </head>
 <body>
 <div class ="weatherTitle">
-<h1>Weather App</h1>
+<h1 id = "Par1">Weather App</h1>
     <h6>Current city: San Antonio</h6>
 </div>
 <div class="searchBar">
-    <a>Place</a>
-    <input type="text" placeholder="City">
-    <button class="find">Find</button>
+    <p id = "inputContainer">Place: <input type = "text" placeholder="City" id="cityInput"></p>
+    <button id= "find" type="button" onclick="GetInfo()">Find</button>
 </div>
 <hr>
 
-<div class="container-fluid"></div>
-    <div class="card-deck">
-    <div class="row">
+<div id= "container-fluid">
+    <div id = "card-deck">
+        <div class = "row">
         <div class="card" style="width: 8rem;">
             <div class="card-header">
                 Date
@@ -86,6 +85,12 @@
         </div>
     </div>
 </div>
+
+</div>
+
+        <script src="js/weather.map.js"></script>
+
+
 
 <hr>
 
