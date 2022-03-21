@@ -962,17 +962,17 @@ createFirstNamesArray(users); // returns... ['Sally', 'Fred', 'Cathy', 'Joe']
 //     $(this).css('background-color', '');
 // });
 
-document.querySelectorAll(".square").
-forEach(function(element){
-    element.addEventListener("mouseenter", function(event){
-        // console.log(event.target);
-        const targetColor = event.target.dataset.color;
-        event.target.style.backgroundColor = targetColor;
-    });
-    element.addEventListener("mouseleave", function(event){
-        event.target.style.backgroundColor = '';
-    });
-});
+// document.querySelectorAll(".square").
+// forEach(function(element){
+//     element.addEventListener("mouseenter", function(event){
+//         // console.log(event.target);
+//         const targetColor = event.target.dataset.color;
+//         event.target.style.backgroundColor = targetColor;
+//     });
+//     element.addEventListener("mouseleave", function(event){
+//         event.target.style.backgroundColor = '';
+//     });
+// });
 
 
 
@@ -999,6 +999,22 @@ forEach(function(element){
 // }, function(){
 //     $(this).css('background-color', '');
 // });
+
+// You have four squares inside a div called changingColors.
+// Every time a square is clicked, its background turns to yellow, then when you click it again,
+// its background goes back to white
+
+// $("#changingColors .square").on('click', function()
+//     {$(this).toggleClass('yellow')}
+// );
+
+const changingColorsSquares = document.querySelectorAll("#changingColors .square");
+
+function toggleColor(e){
+    !e.target.style.backgroundColor ? e.target.style.backgroundColor = 'yellow' : e.target.style.backgroundColor = "";
+}
+
+changingColorsSquares.forEach(square => square.addEventListener('click', toggleColor));
 
 
 
