@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom Manipulation</title>
+</head>
+<body>
+/**
+* Write your solutions here
+*/
+
+// When the button with the id of change-bg-color is clicked the background of the page should turn blue.
+
+const btn = document.getElementById('change-bg-color');
+
+btn.addEventListener('click', function onClick(event) {
+
+document.body.style.backgroundColor = 'blue'});
+
+
+
+
+// When a button that belongs to the btn class is clicked, change the background color of that button to this color: #93f2e5.
+
+// const btn1 = document.getElementsByClassName('btn');
+//
+// btn1.addEventListener('click', function onClick(event) {
+//     // 👇️ change background color
+//     event.target.style.backgroundColor = '#93f2e5'});
+
+const btn1 = document.getElementsByClassName('btn');
+
+$("btn").click(function() {
+$(this).backgroundColor('#93f2e5');
+});
+
+
+
+// When the button with the id of reset-btn is clicked make sure it reloads the page and restores everything back to the initial state.
+
+// document.getElementById('reset-btn').reset();
+$("reset-btn")[0].reset();
+
+// When a star is being hovered by the mouse: get the selected data attribute value from the star being hovered and display it in the element with the id of review-result.
+
+$('.star fa fa-star checked').hover(function () {
+
+});
+
+/*When the button with the id of go-to-btn is clicked change the window location to the url specified in the URL input with the id of custom-url. Consider adding http:// to your URLS if you want to test external domains.*/
+
+
+const btn3 = document.getElementById("go-to-btn");
+
+btn3.addEventListener("click", function onclick() {
+window.location = "https://codeup.com"});
+
+
+
+</body>
+</html>
