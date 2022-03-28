@@ -469,9 +469,9 @@ getSimpleUser(fred) // {firstName: 'fred', lastName: 'smith'}
 //    location.reload();
 // });
 
-$("#reset").on('click', function(){
-    window.location.reload();
-});
+// $("#reset").on('click', function(){
+//     window.location.reload();
+// });
 
 // document.querySelectorAll(".square")
 //     .forEach(item =>{
@@ -1008,13 +1008,43 @@ createFirstNamesArray(users); // returns... ['Sally', 'Fred', 'Cathy', 'Joe']
 //     {$(this).toggleClass('yellow')}
 // );
 
-const changingColorsSquares = document.querySelectorAll("#changingColors .square");
+// const changingColorsSquares = document.querySelectorAll("#changingColors .square");
+//
+// function toggleColor(e){
+//     !e.target.style.backgroundColor ? e.target.style.backgroundColor = 'yellow' : e.target.style.backgroundColor = "";
+// }
+//
+// changingColorsSquares.forEach(square => square.addEventListener('click', toggleColor));
 
-function toggleColor(e){
-    !e.target.style.backgroundColor ? e.target.style.backgroundColor = 'yellow' : e.target.style.backgroundColor = "";
+// ================================= WARM UP
+// Create a function, encodeStr, that takes in a string and returns the string of characters with the following substitutions:
+//     ‘a’ or ‘A’ becomes ‘@’
+// ‘i’ or ‘I’ becomes ‘1’
+// ‘s’ or ‘S’ becomse ‘$’
+// encodeStr(‘apple’) // returns ‘@pple’
+// encodeStr(‘codeup’) // returns ‘codeup’
+// encodeStr(‘SASS’) // returns ‘$@$$’
+// encodeStr(‘bike’) // returns ‘b1ke’
+
+function encodeStr (str) {
+   //split the string into an array of characters
+    //map over them to produce a return value that changes the three characters and returns the current characters otherwise
+    //join the characters together into our final output
+    return str.split("").map(char => {
+        if (char.toLowerCase() === 'a') {
+            return "@";
+        } else if (char.toLowerCase() === "s") {
+            return "$";
+        } else if (char.toLowerCase() === "i") {
+            return 1;
+        } else {
+            return char;
+        }
+    }).join("");
 }
 
-changingColorsSquares.forEach(square => square.addEventListener('click', toggleColor));
+console.log(encodeStr("aiscity"));  // returns ‘@pple’
+
 
 
 
